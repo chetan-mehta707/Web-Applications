@@ -20,3 +20,5 @@ For Manager : Can nominate multiple reportees at the same time.
 Admin : Can add detete new Trainings.
 
 Also the tools gives an Audit Report post end of Calendar year.
+
+Technologies : J2EE, Angula.JS, LDAP, Maven, Apache Tomcat, JAX-RS.
