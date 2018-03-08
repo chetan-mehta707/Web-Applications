@@ -21,4 +21,4 @@ Admin : Can add detete new Trainings.
 
 Also the tools gives an Audit Report post end of Calendar year.
 
-Technologies : J2EE, Angula.JS, LDAP, Maven, Apache Tomcat, JAX-RS.
+Technologies : J2EE, Angular.JS, LDAP, Maven, Apache Tomcat, JAX-RS.
