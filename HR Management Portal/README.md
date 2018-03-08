@@ -22,3 +22,5 @@ Admin : Can add detete new Trainings.
 Also the tools gives an Audit Report post end of Calendar year.
 
 Technologies : J2EE, Angular.JS, LDAP, Maven, Apache Tomcat, JAX-RS.
+
+Using LDAP Active Directory to authenticate Users.
