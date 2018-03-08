@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Envestnet Yoldee</title>
+<!-- <script type="text/javascript" src="js/angular.js"></script> -->
+
+<link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+<!-- jquery, moment, and angular have to get included before fullcalendar -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+
+<script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+<script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
+
+<script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+	
+	<style type="text/css">
+	
+	.page-header { 
+	border-bottom:none; 
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    border-color: #aaa;
+    background-color:white;
+    }
+	</style>
+	
+	
+	
+</head>
+
+<body style="background-color: #000000">
+<!-- <div class="page-header">
+<h1><img src="imgs/header-logo.png"> HR Management Application</h1>
+</div> -->
+	<div ng-app="myApp" class="container">
+		<div ng-controller="Controller" class="col-lg-4"></div>
+		<div ng-controller="Controller" class="col-lg-3">
+			<div style="margin-top: 150px">
+				<h2 class="form-signin-heading" style="color:white">Please sign in</h2>
+				<form ng-submit="authenticate()" class="form-signin form-group">
+					<input type="text" name="userId" id="userId"
+						ng-model="employee.username" class="form-control"
+						placeholder="UserName" /> <label></label> <input type="password"
+						name="passwd" id="passwd" ng-model="employee.password"
+						class="form-control" placeholder="Password" />
+
+					<div class="checkbox" style="color:white">
+						<label> <input type="checkbox" value="remember-me">
+							Remember me
+						</label>
+					</div>
+					<button id="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+				</form>
+				
+				<label></br></label>
+					<label style="color:red" ng-show="error">
+						<strong>Warning!</strong> Authentication Failure.
+					</label>
+			</div>
+		</div>
+		<div ng-controller="Controller" class="col-lg-4"></div>
+	</div>
+
+</body>
+
+</html>
